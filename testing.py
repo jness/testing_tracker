@@ -68,5 +68,5 @@ print '-'*55
 for release in getrelease():
     getpackage(release, int(sys.argv[1]))
 
-for package in rpms:
+for package in sorted(rpms):
     print '%-10s %s' % (rpms[package], package)
